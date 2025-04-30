@@ -1,0 +1,25 @@
+name: Pizza Project with Playwright
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Python Setup
+        uses: actions/setup-python@v4
+        with :
+          python-version: '3.12.1'
+      - name: Install all the Dependencies
+        run:  |
+          pip install -r requirements.txt
+      - name: Run Tests
+        run: |
+          pytest
