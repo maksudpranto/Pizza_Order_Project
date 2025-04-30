@@ -1,25 +1,27 @@
-name: Pizza Project with Playwright
+name: Python Tests
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]  # Runs on push to main branch
   pull_request:
-    branches: [main]
+    branches: [ main ]  # Runs on PRs targeting main
 
 jobs:
   test:
     runs-on: macos-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Python Setup
+      - name: Set up Python
         uses: actions/setup-python@v4
-        with :
-          python-version: '3.12.1'
-      - name: Install all the Dependencies
-        run:  |
+        with:
+          python-version: '3.1.2'
+
+      - name: Install dependencies
+        run: |
           pip install -r requirements.txt
-      - name: Run Tests
+
+      - name: Run tests
         run: |
           pytest
