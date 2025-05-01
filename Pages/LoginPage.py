@@ -18,4 +18,8 @@ class LoginPage:
         self.password_inputbox.fill("admin")
         self.login_button.click()
 
+    def validateLogin(self):
+        titleAfterLogin = self.page.title()
+        expected_title = "Order Pizza"
+
 
