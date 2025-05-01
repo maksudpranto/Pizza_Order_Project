@@ -1,4 +1,3 @@
-from playwright.sync_api import Page
 from Pages.LoginPage import LoginPage
 
 def test_loginPage_title_verify(setup_teardown):
@@ -17,3 +16,4 @@ def test_LoginValidation(setup_teardown):
     page = setup_teardown
     titleVerify_afterLogin = LoginPage(page)
     titleVerify_afterLogin.validateLogin()
+

@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e673eafc-7a39-47bb-896d-1d3b88f3203e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/playwright-pizza.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/playwright-pizza.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/LoginPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/pizza_selection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/test_pizza_selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/test_Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_Login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746028565057</updated>
       <workItem from="1746028567410" duration="5220000" />
-      <workItem from="1746066666121" duration="457000" />
+      <workItem from="1746066666121" duration="2161000" />
     </task>
     <servers />
   </component>
