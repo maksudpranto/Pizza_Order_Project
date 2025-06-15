@@ -8,7 +8,7 @@ def setup_teardown():
         browser = playwright.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
-        page.goto('https://play1.automationcamp.ir/login.html')
+        # page.goto('https://play1.automationcamp.ir/login.html')
         yield page
         context.close()
         browser.close()
